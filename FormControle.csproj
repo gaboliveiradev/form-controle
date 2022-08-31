@@ -90,10 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\connMySQL.cs" />
-    <Compile Include="View\FormLogin.cs">
+    <Compile Include="View\Modules\Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormLogin.Designer.cs">
+    <Compile Include="View\Modules\Login\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\Program.cs" />
@@ -123,6 +123,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="View\Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DATABASE\MODELAGEM_DER.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
