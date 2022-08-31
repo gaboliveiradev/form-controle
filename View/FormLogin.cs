@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FormControle
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
