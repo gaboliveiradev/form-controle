@@ -32,10 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_login = new System.Windows.Forms.Button();
             this.txt_senha = new System.Windows.Forms.TextBox();
-            this.txt_cpf = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_erro = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -44,9 +45,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.txt_erro);
             this.panel1.Controls.Add(this.btn_login);
             this.panel1.Controls.Add(this.txt_senha);
-            this.panel1.Controls.Add(this.txt_cpf);
+            this.panel1.Controls.Add(this.txt_email);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -78,14 +80,14 @@
             this.txt_senha.Size = new System.Drawing.Size(378, 50);
             this.txt_senha.TabIndex = 2;
             // 
-            // txt_cpf
+            // txt_email
             // 
-            this.txt_cpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cpf.Location = new System.Drawing.Point(90, 261);
-            this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(378, 50);
-            this.txt_cpf.TabIndex = 1;
+            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(90, 261);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(378, 50);
+            this.txt_email.TabIndex = 1;
             // 
             // label1
             // 
@@ -117,6 +119,16 @@
             this.panel2.Size = new System.Drawing.Size(548, 650);
             this.panel2.TabIndex = 1;
             // 
+            // txt_erro
+            // 
+            this.txt_erro.AutoSize = true;
+            this.txt_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_erro.ForeColor = System.Drawing.Color.White;
+            this.txt_erro.Location = new System.Drawing.Point(102, 484);
+            this.txt_erro.Name = "txt_erro";
+            this.txt_erro.Size = new System.Drawing.Size(0, 13);
+            this.txt_erro.TabIndex = 2;
+            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,8 +155,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.TextBox txt_senha;
-        private System.Windows.Forms.TextBox txt_cpf;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txt_erro;
     }
 }
 

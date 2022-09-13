@@ -12,11 +12,11 @@ namespace FormControle.DAL
     {
         private MySqlConnection connection;
 
-        private string server = "";
-        private string port = "";
-        private string dbname = "";
-        private string uid = "";
-        private string pwd = "";
+        private string server = "localhost";
+        private string port = "3307";
+        private string dbname = "business_manager";
+        private string uid = "root";
+        private string pwd = "etecjau";
 
         public connMySQL()
         {
