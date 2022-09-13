@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FormControle
+namespace FormControle.View.Modules.Principal
 {
-    public partial class frm_login : Form
+    public partial class FormPrincipal : Form
     {
-        public frm_login()
+        public FormPrincipal()
         {
             InitializeComponent();
-        }
-
-        public void log_into()
-        {
-
-        }
-
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
