@@ -10,7 +10,7 @@ namespace FormControle.Model
 {
     internal class LoginModel
     {
-        string email, pass;
+        public string email, senha;
         public MySqlDataReader dr;
 
     }
