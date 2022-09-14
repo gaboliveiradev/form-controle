@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_erro = new System.Windows.Forms.Label();
             this.btn_login = new System.Windows.Forms.Button();
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txt_erro = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,6 +55,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(554, 650);
             this.panel1.TabIndex = 0;
+            // 
+            // txt_erro
+            // 
+            this.txt_erro.AutoSize = true;
+            this.txt_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_erro.ForeColor = System.Drawing.Color.White;
+            this.txt_erro.Location = new System.Drawing.Point(102, 484);
+            this.txt_erro.Name = "txt_erro";
+            this.txt_erro.Size = new System.Drawing.Size(0, 13);
+            this.txt_erro.TabIndex = 2;
             // 
             // btn_login
             // 
@@ -79,6 +89,7 @@
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(378, 50);
             this.txt_senha.TabIndex = 2;
+            this.txt_senha.UseSystemPasswordChar = true;
             // 
             // txt_email
             // 
@@ -92,13 +103,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 175);
+            this.label1.Location = new System.Drawing.Point(183, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 55);
+            this.label1.Size = new System.Drawing.Size(189, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "W E L C O M E";
+            this.label1.Text = "WELCOME";
             // 
             // pictureBox1
             // 
@@ -114,20 +125,10 @@
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(552, 0);
+            this.panel2.Location = new System.Drawing.Point(560, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(548, 650);
+            this.panel2.Size = new System.Drawing.Size(540, 650);
             this.panel2.TabIndex = 1;
-            // 
-            // txt_erro
-            // 
-            this.txt_erro.AutoSize = true;
-            this.txt_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_erro.ForeColor = System.Drawing.Color.White;
-            this.txt_erro.Location = new System.Drawing.Point(102, 484);
-            this.txt_erro.Name = "txt_erro";
-            this.txt_erro.Size = new System.Drawing.Size(0, 13);
-            this.txt_erro.TabIndex = 2;
             // 
             // frm_login
             // 

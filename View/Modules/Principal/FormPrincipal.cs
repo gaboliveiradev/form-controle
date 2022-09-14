@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FormControle.View.Modules.Principal
 {
-    public partial class FormPrincipal : Form
+    public partial class frm_principal : Form
     {
-        public FormPrincipal()
+        public frm_principal()
         {
             InitializeComponent();
         }

@@ -26,7 +26,7 @@ namespace FormControle.Model
                 email = dr.GetString("email");
             }
 
-            FormPrincipal principal = new FormPrincipal();
+            frm_principal principal = new frm_principal();
             if (id != null)
             {
                 principal.Show();
