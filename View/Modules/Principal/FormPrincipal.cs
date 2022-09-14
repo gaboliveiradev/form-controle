@@ -39,6 +39,11 @@ namespace FormControle.View.Modules.Principal
 
                 dgv_produto.Rows.Add(false, ean, nome, valor_compra, valor_venda, estoque);
             }
+
+            foreach (DataGridViewRow l in dgv_produto.Rows)
+            {
+                l.DefaultCellStyle.BackColor = (Convert.ToDouble(l.Cells[4].Value) < Convert.ToDouble(l.Cells[3].Value)) ? Color.Red : Color.Green;
+            }
         }
 
         private void btn_marcar_desmarcar_Click(object sender, EventArgs e)
@@ -76,15 +81,8 @@ namespace FormControle.View.Modules.Principal
 
         private void btn_aplicar_percentual_Click(object sender, EventArgs e)
         {
-            if(Convert.ToBoolean(dgv_produto.CurrentRow.Cells[0].Value) == true) {
-                double percentual = Convert.ToDouble(dgv_produto.CurrentRow.Cells[4].Value) * double.Parse(txt_percentual.Text.ToString());
-                double valor_atual = double.Parse(dgv_produto.CurrentRow.Cells[4].Value.ToString());
-                double valor_final = valor_atual + percentual;
-
-                Console.WriteLine($"Percentual: {percentual} | Valor Atual: {valor_atual} | Valor Final: {valor_final}");
-
-                dgv_produto.CurrentRow.Cells[4].Value = valor_final.ToString();
-            }
+            foreach (DataGridViewRow l in dgv_produto.Rows)
+                l.Cells[4].Value = Math.Round(Convert.ToDouble(l.Cells[4].Value) + ( (Convert.ToDouble(l.Cells[4].Value) * Convert.ToDouble(txt_percentual.Text)) ), 2);
         }
     }
 }

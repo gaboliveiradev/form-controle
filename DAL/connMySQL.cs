@@ -16,7 +16,7 @@ namespace FormControle.DAL
         private string port = "3307";
         private string dbname = "business_manager";
         private string uid = "root";
-        private string pwd = "mysqldev@2835";
+        private string pwd = "etecjau";
 
         public connMySQL()
         {

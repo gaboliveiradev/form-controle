@@ -125,9 +125,9 @@
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(560, 0);
+            this.panel2.Location = new System.Drawing.Point(552, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(540, 650);
+            this.panel2.Size = new System.Drawing.Size(548, 650);
             this.panel2.TabIndex = 1;
             // 
             // frm_login

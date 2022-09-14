@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.dgv_produto = new System.Windows.Forms.DataGridView();
-            this.btn_importar = new System.Windows.Forms.Button();
-            this.btn_marcar_desmarcar = new System.Windows.Forms.Button();
-            this.btn_excluir = new System.Windows.Forms.Button();
-            this.btn_aplicar_percentual = new System.Windows.Forms.Button();
-            this.ofd_arquivo = new System.Windows.Forms.OpenFileDialog();
             this.cln_checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.clm_ean = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_valor_compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_valor_venda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cln_estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_importar = new System.Windows.Forms.Button();
+            this.btn_marcar_desmarcar = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
+            this.btn_aplicar_percentual = new System.Windows.Forms.Button();
+            this.ofd_arquivo = new System.Windows.Forms.OpenFileDialog();
             this.txt_percentual = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_produto)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,36 @@
             this.dgv_produto.Size = new System.Drawing.Size(1056, 545);
             this.dgv_produto.TabIndex = 0;
             this.dgv_produto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_produto_CellClick);
+            // 
+            // cln_checkbox
+            // 
+            this.cln_checkbox.HeaderText = "";
+            this.cln_checkbox.Name = "cln_checkbox";
+            // 
+            // clm_ean
+            // 
+            this.clm_ean.HeaderText = "EAN";
+            this.clm_ean.Name = "clm_ean";
+            // 
+            // cln_nome
+            // 
+            this.cln_nome.HeaderText = "NOME";
+            this.cln_nome.Name = "cln_nome";
+            // 
+            // cln_valor_compra
+            // 
+            this.cln_valor_compra.HeaderText = "VALOR COMPRA";
+            this.cln_valor_compra.Name = "cln_valor_compra";
+            // 
+            // cln_valor_venda
+            // 
+            this.cln_valor_venda.HeaderText = "VALOR_VENDA";
+            this.cln_valor_venda.Name = "cln_valor_venda";
+            // 
+            // cln_estoque
+            // 
+            this.cln_estoque.HeaderText = "ESTOQUE";
+            this.cln_estoque.Name = "cln_estoque";
             // 
             // btn_importar
             // 
@@ -102,36 +132,6 @@
             this.btn_aplicar_percentual.Text = "Aplicar";
             this.btn_aplicar_percentual.UseVisualStyleBackColor = true;
             this.btn_aplicar_percentual.Click += new System.EventHandler(this.btn_aplicar_percentual_Click);
-            // 
-            // cln_checkbox
-            // 
-            this.cln_checkbox.HeaderText = "";
-            this.cln_checkbox.Name = "cln_checkbox";
-            // 
-            // clm_ean
-            // 
-            this.clm_ean.HeaderText = "EAN";
-            this.clm_ean.Name = "clm_ean";
-            // 
-            // cln_nome
-            // 
-            this.cln_nome.HeaderText = "NOME";
-            this.cln_nome.Name = "cln_nome";
-            // 
-            // cln_valor_compra
-            // 
-            this.cln_valor_compra.HeaderText = "VALOR COMPRA";
-            this.cln_valor_compra.Name = "cln_valor_compra";
-            // 
-            // cln_valor_venda
-            // 
-            this.cln_valor_venda.HeaderText = "VALOR_VENDA";
-            this.cln_valor_venda.Name = "cln_valor_venda";
-            // 
-            // cln_estoque
-            // 
-            this.cln_estoque.HeaderText = "ESTOQUE";
-            this.cln_estoque.Name = "cln_estoque";
             // 
             // txt_percentual
             // 
